@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/Timeraa/Discord-Bot-Boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon -L index"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "nodemon": "^1.18.9",
+    "dotenv": "^8.0.0"
+  },
+  "peerDependencies": {
+    "mysql2": "^1.6.5"
+  }
+}
