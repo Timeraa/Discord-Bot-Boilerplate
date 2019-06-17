@@ -1,11 +1,29 @@
 {
-	"name": "premid-bot",
-	"version": "2.2.0",
-	"author": "Timeraa",
-	"repository": "https://github.com/PreMiD/Discord-Bot",
-	"scripts": {
-		"start": "npm start --prefix src/.",
-		"dev": "npm run dev --prefix src/."
-	},
-	"devDependencies": {}
+  "name": "someName",
+  "description": "someDescription",
+  "repository": "someUrl",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd dist && node index.js",
+    "dev": "nodemon -L --quiet --exec 'node devMode.js & cd dist && node index.js' -w src -e ts,json"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "fast-glob": "^3.0.0",
+    "mysql2": "^1.6.5",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/fs-extra": "^7.0.0",
+    "@types/mysql2": "github:types/mysql2#semver:1.0",
+    "@types/ws": "^6.0.1",
+    "dotenv": "^6.2.0",
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.0.1",
+    "nodemon": "^1.18.9",
+    "typescript": "^3.5.2"
+  }
 }
